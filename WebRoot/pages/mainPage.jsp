@@ -3,10 +3,10 @@
 <html>
 <head>
     <title>板块</title>
-    <link rel="stylesheet" href="./resources/css/material-icons.css">
-    <link rel="stylesheet" href="./resources/css/material.min.css">
-    <script type="text/javascript" src="./resources/js/material.min.js"></script>
-    <script type="text/javascript" src="./resources/js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/material-icons.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/material.min.css">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/material.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-3.1.1.min.js"></script>
     <style>
         .card-width {
             width: 600px;
@@ -27,7 +27,7 @@
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-50">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="/">Excited</a>
+            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="/">HomePage</a>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->

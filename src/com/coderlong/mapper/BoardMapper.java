@@ -11,8 +11,10 @@ import com.coderlong.po.Board;
  */
 public interface BoardMapper {
 	//增加板块 
+	
 	public void addBoard(Board board);
 	//列出所有的板块 
+	
 	public List<Board> listBoard();
 	// 根据板块列出所有的 帖子 
 	public Board listAllPostsOfBoard(int boardId);

@@ -2,11 +2,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Coder</title>
-    <link rel="stylesheet" href="./resources/css/material-icons.css">
-    <link rel="stylesheet" href="./resources/css/material.min.css">
-    <script type="text/javascript" src="./resources/js/material.min.js"></script>
-    <script type="text/javascript" src="./resources/js/jquery-3.1.1.min.js"></script>
+    <title>Excited</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/material-icons.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/material.min.css">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/material.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-3.1.1.min.js"></script>
     <style>
         .center {
             margin-left: auto;
@@ -24,7 +24,7 @@
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-50">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="/">Tomcat</a>
+            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="/">HomePage</a>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
@@ -39,8 +39,8 @@
                         <a class="mdl-navigation__link mdl-color-text--black" href="/user/loginOut">注销</a>
                     </c:when>
                     <c:when test="${username == null}">
-                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="/userLogin">登录</a>
-                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="/userRegister">注册</a>
+                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="${pageContext.request.contextPath}/userLogin.action">登录</a>
+                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="${pageContext.request.contextPath}/userRegister.action">注册</a>
                     </c:when>
                 </c:choose>
             </nav>
@@ -54,7 +54,7 @@
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--12-col center">
                     <div align="center">
-                        <img src="../resources/img/home-first.png" align="center">
+                        <img src="${pageContext.request.contextPath}/resources/img/home-first.png" align="center">
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-card mdl-shadow--2dp center">
                         <div class="mdl-card__title mdl-card--expand">
-                            <img src="./resources/img/home-ill-build.png" width="100%"/>
+                            <img src="${pageContext.request.contextPath}/resources/img/home-ill-build.png" width="100%"/>
                         </div>
                         <div class="mdl-card__supporting-text mdl-typography--text-center">
                             <h5>自由</h5>
@@ -81,7 +81,7 @@
                 <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-card mdl-shadow--2dp center">
                         <div class="mdl-card__title mdl-card--expand">
-                            <img src="./resources/img/home-ill-platform.png" width="100%"/>
+                            <img src="${pageContext.request.contextPath}/resources/img/home-ill-platform.png" width="100%"/>
                         </div>
                         <div class="mdl-card__supporting-text mdl-typography--text-center">
                             <h5>开放</h5>
@@ -91,7 +91,7 @@
                 <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-card mdl-shadow--2dp center">
                         <div class="mdl-card__title mdl-card--expand">
-                            <img src="./resources/img/home-ill-work.png" width="100%"/>
+                            <img src="${pageContext.request.contextPath}/resources/img/home-ill-work.png" width="100%"/>
                         </div>
                         <div class="mdl-card__supporting-text mdl-typography--text-center">
                             <h5>共享</h5>
@@ -112,12 +112,12 @@
             <!-- 主页底部信息 -->
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section center" align="center">
-                    <div class="mdl-logo">Code</div>
+                    <div class="mdl-logo">HomePage</div>
                     <ul class="mdl-mini-footer__link-list">
                         <li><a href="#">GitHub</a></li>
                         <li><a href="#">Privacy & Terms</a></li>
                         <div align="right">
-                            <li><a href="/">想你所想，做你想做</a></li>
+                            <li><a href="/">The WebSite is Coll </a></li>
                         </div>
                     </ul>
                 </div>
