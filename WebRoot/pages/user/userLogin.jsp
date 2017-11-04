@@ -20,6 +20,7 @@
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation"></nav>
         </div>
+        
     </header>
     <main class="mdl-layout__content">
         <div class="page-content">
@@ -27,7 +28,7 @@
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell-4"></div>
                 <div class="mdl-cell mdl-cell-4">
-                    <form action="/user/userLogin" method="post">
+                    <form action="${pageContext.request.contextPath}/user/userLogin.action" method="post">
                         <div class="mdl-card mdl-shadow--2dp center" align="center">
                             <div class="mdl-card__title">
                                 <h5 class="mdl-color-text--pink-400">用户登录</h5>
@@ -45,7 +46,7 @@
                             <div class="mdl-card__actions">
                                 <input class="mdl-button mdl-button--raised mdl-js-button mdl-color-text--white mdl-color--pink-400 mdl-color-text--white"
                                        type="submit" value="登录" name="submit">
-                                <a class="mdl-button mdl-js-button mdl-button--raised" href="/userRegister">注册</a>
+                                <a class="mdl-button mdl-js-button mdl-button--raised" href="${pageContext.request.contextPath}/user/userRegister.action">注册</a>
                             </div>
                         </div>
                     </form>

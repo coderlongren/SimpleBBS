@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Excited</title>
+    <title>Coderlong</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/material-icons.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/material.min.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/material.min.js"></script>
@@ -24,7 +24,7 @@
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-50">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="/">HomePage</a>
+            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="${pageContext.request.contextPath}/.action">HomePage</a>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
@@ -34,9 +34,9 @@
                         <a class="mdl-navigation__link mdl-color-text--pink-400"
                            href="/user/listUserInfo?username=${username}">${username}</a>
                         <c:if test="${username == 'admin'}">
-                            <a class="mdl-navigation__link mdl-color-text--black" href="/admin/manageCenter">登入管理后台</a>
+                            <a class="mdl-navigation__link mdl-color-text--black" href="${pageContext.request.contextPath}/admin/manageCenter.action">登入管理后台</a>
                         </c:if>
-                        <a class="mdl-navigation__link mdl-color-text--black" href="/user/loginOut">注销</a>
+                        <a class="mdl-navigation__link mdl-color-text--black" href="${pageContext.request.contextPath}/user/loginOut.action">注销</a>
                     </c:when>
                     <c:when test="${username == null}">
                         <a class="mdl-navigation__link mdl-color-text--pink-400" href="${pageContext.request.contextPath}/userLogin.action">登录</a>
@@ -114,7 +114,7 @@
                 <div class="mdl-mini-footer__left-section center" align="center">
                     <div class="mdl-logo">HomePage</div>
                     <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">GitHub</a></li>
+                        <li><a href="https://www.github.com">GitHub</a></li>
                         <li><a href="#">Privacy & Terms</a></li>
                         <div align="right">
                             <li><a href="/">The WebSite is Coll </a></li>

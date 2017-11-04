@@ -21,15 +21,22 @@ public class MainController {
 		return "mainPage";
 	}
 	 // 显示用户登录页面
-    @RequestMapping("//userLogin")
+    @RequestMapping("/userLogin")
     public String userLogin() {
         return "user/userLogin";
     }
+    
     // 显示注册页面
     @RequestMapping("userRegister")
     public String userRegister(){
     	return "user/userRegister";
     }
+    
+    
+    
+    
+    
+    
 	
 	
 	

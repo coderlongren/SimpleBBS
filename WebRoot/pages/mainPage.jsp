@@ -27,7 +27,7 @@
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--grey-50">
         <div class="mdl-layout__header-row">
             <!-- Title -->
-            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="/">HomePage</a>
+            <a class="mdl-layout-title mdl-navigation__link mdl-color-text--pink-400" href="${pageContext.request.contextPath}/.action">HomePage</a>
             <!-- Add spacer, to align navigation to the right -->
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
@@ -37,13 +37,13 @@
                         <a class="mdl-navigation__link mdl-color-text--pink-400"
                            href="/user/listUserInfo?username=${username}">${username}</a>
                         <c:if test="${username == 'admin'}">
-                            <a class="mdl-navigation__link mdl-color-text--black" href="/admin/manageCenter">登入管理后台</a>
+                            <a class="mdl-navigation__link mdl-color-text--black" href="${pageContext.request.contextPath}/admin/manageCenter.action">登入管理后台</a>
                         </c:if>
-                        <a class="mdl-navigation__link mdl-color-text--black" href="/user/loginOut">注销</a>
+                        <a class="mdl-navigation__link mdl-color-text--black" href="${pageContext.request.contextPath}/user/loginOut.action">注销</a>
                     </c:when>
                     <c:when test="${username == null}">
-                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="/userLogin">登录</a>
-                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="/userRegister">注册</a>
+                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="${pageContext.request.contextPath}/userLogin.action">登录</a>
+                        <a class="mdl-navigation__link mdl-color-text--pink-400" href="${pageContext.request.contextPath}/userRegister.action">注册</a>
                     </c:when>
                 </c:choose>
             </nav>
